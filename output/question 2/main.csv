@@ -1,2 +1,5 @@
 import pandas as pd
-data = 
+df = pd.dataset(data.columns=('occupation', 'min', 'max'))
+ans1 = df[df['age'] == def['age'].min()]
+ans2 = df[df['age'] == def['age'].max()]
+print([ans1][ans2] [['occupation', 'min', 'max']]
