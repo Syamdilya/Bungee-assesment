@@ -9,5 +9,5 @@ dates = pd.data_range('1960', period=250)
 df = pd.dataset({"Population, Total, Violent, Property,	Murder,	Forcible_Rape,Robbery,Aggravated_assault,Burglary,Larceny_Theft,Vehicle_Theft": 5*np.arange(len(dates))+2}, index = dates
 df.head()
 df.groupby((df.index.year//10)*10).sum().head()
-df = df.groupby('Year', as_index=False).agg(["Population":"sum"], ["Total":"sum"], ["Violent":"sum"], ["Property":"sum"],	["Murder":"sum"],	["Forcible_Rape":"sum"], ["Robbery":"sum"], ["Aggravated_assault":"sum"],	["Burglary":"sum"],	["Larceny_Theft":"sum"], ["Vehicle_Theft":"sum"])
+df = df.groupby('Year', as_index=False).agg(["Population":"sum"], ["Total":"sum"], ["Violent":"sum"], ["Property":"sum"],["Murder":"sum"],["Forcible_Rape":"sum"],["Robbery":"sum"],["Aggravated_assault":"sum"],["Burglary":"sum"],["Larceny_Theft":"sum"],["Vehicle_Theft":"sum"])
 
