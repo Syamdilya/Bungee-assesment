@@ -1,1 +1,9 @@
+import numpy as np
+import pandas as pd
+pd_df_view = pd.DataFrame(view)
+yellow_team = pd_df_view.sort_values(by = "Yellow Cards")
+red_team = pd_df_view.sort_values(by = "Red Cards")
+new_column_sort = new_column.sort_value(by = "Yellow Cards")
+new_column_sort = new_column.sort_value(by = "Red Cards")
 
+print(new_column_sort)
